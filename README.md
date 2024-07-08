@@ -1,5 +1,3 @@
-# FrontEnd-Interview-Data
-
 # To run Front-End
 
 1. Go to profile-card `cd profile-card` and run `npm install`.
