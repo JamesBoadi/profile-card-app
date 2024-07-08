@@ -1,59 +1,31 @@
-# TODO: Write a document explaining the changes
+# FrontEnd-Interview-Data
 
+# To run Front-End
 
+1. Go to profile-card `cd profile-card` and run `npm install`.
+2. To run, type `npm start`.
+3. To run tests go to the test folder `cd src/test` and run `npm test`.
 
+In order for the application to work both the client and server must be running.
 
+The card type can be set in `cardType.json` (intended for personal testing only) or it can be entered
+as a string in the `Navigation` component.
 
+The types can either be `horizontal` or `vertical` (case sensitive). Any other setting will result in 
+an error.
 
+The application has been set to run on port `5000` but can be changed in `package.json`.
 
+## Objectives complete
 
+* Added horizontal and vertical designs for cards
+* Added unit test
+* Added interface that can be extended to include toggle for light and dark modes
+* Some coverage added for components
 
+## Minor Issues
 
-
-
-
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+There appears to be something strange going on when running the tests
+that prevents css file from being parsed. Despite adding `file.transform` and
+enabling `jsdom` typescript still doesn't seem to like it, other than that
+it runs perfectly fine.
